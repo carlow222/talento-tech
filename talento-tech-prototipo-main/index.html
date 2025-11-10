@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Tech Oriente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Talento Tech</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#programa" class="nav-link">Programa</a></li>
+                <li><a href="#bootcamps" class="nav-link">Bootcamps</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">🚀 Talento Tech Oriente</h1>
+            <p class="hero-subtitle">Transformando vidas a través de la tecnología</p>
+            <p class="hero-description">El futuro digital comienza aquí. Únete a la revolución tecnológica del oriente colombiano.</p>
+            <button class="cta-button" onclick="scrollToSection('bootcamps')">Explorar Bootcamps</button>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-elements">
+                <div class="element element-1">💻</div>
+                <div class="element element-2">🔮</div>
+                <div class="element element-3">⚡</div>
+                <div class="element element-4">🌐</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"></div>
+
+        <!-- Programa Section -->
+        <section id="programa" class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">🌟 ¿Qué es Talento Tech Oriente?</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p class="highlight-text">Talento Tech Oriente es un programa revolucionario del gobierno colombiano que está transformando el panorama tecnológico de la región oriental del país.</p>
+                    <p>Nuestro ecosistema educativo está diseñado para democratizar el acceso a la educación tecnológica de vanguardia, formando a los profesionales del futuro en las tecnologías más demandadas y disruptivas del mercado global.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">🎯</span>
+                            <div>
+                                <h4>Metodología Práctica</h4>
+                                <p>Aprendizaje basado en proyectos reales de la industria</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">👨‍💻</span>
+                            <div>
+                                <h4>Mentores Expertos</h4>
+                                <p>Profesionales activos de empresas tecnológicas líderes</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🚀</span>
+                            <div>
+                                <h4>Inserción Laboral</h4>
+                                <p>Conexión directa con oportunidades de empleo tech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-visual">
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Graduados</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">85%</span>
+                            <span class="stat-label">Empleabilidad</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Bootcamps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootcamps Section -->
+        <section id="bootcamps" class="section-container dark-section">
+            <div class="section-header">
+                <h2 class="section-title">🎯 Bootcamps Disponibles</h2>
+                <div class="section-line"></div>
+                <p class="section-description">Programas intensivos diseñados para las profesiones del futuro digital</p>
+            </div>
+            <div class="bootcamps-grid">
+                <div class="bootcamp-card">
+                    <div class="card-header">
+                        <span class="card-icon">💻</span>
+                        <h3>Desarrollo Web Full Stack</h3>
+                    </div>
+                    <p class="card-description">Domina el arte de crear aplicaciones web completas desde cero. Aprende las tecnologías más demandadas del mercado: React, Node.js, bases de datos y arquitecturas modernas.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">Frontend</span>
+                        <span class="feature-tag">Backend</span>
+                        <span class="feature-tag">Bases de Datos</span>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-value">16</span>
+                            <span class="stat-unit">semanas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">95%</span>
+                            <span class="stat-unit">empleabilidad</span>
+                        </div>
+                    </div>
+                    <button class="card-btn" onclick="showBootcampDetail('fullstack')">Ver Detalles</button>
+                </div>
+
+                <div class="bootcamp-card">
+                    <div class="card-header">
+                        <span class="card-icon">📊</span>
+                        <h3>Ciencia de Datos</h3>
+                    </div>
+                    <p class="card-description">Conviértete en un científico de datos experto. Aprende Python, machine learning, inteligencia artificial y visualización de datos para transformar información en decisiones estratégicas.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">Python</span>
+                        <span class="feature-tag">Machine Learning</span>
+                        <span class="feature-tag">IA</span>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-value">18</span>
+                            <span class="stat-unit">semanas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">92%</span>
+                            <span class="stat-unit">empleabilidad</span>
+                        </div>
+                    </div>
+                    <button class="card-btn" onclick="showBootcampDetail('datascience')">Ver Detalles</button>
+                </div>
+
+                <div class="bootcamp-card">
+                    <div class="card-header">
+                        <span class="card-icon">🔒</span>
+                        <h3>Ciberseguridad</h3>
+                    </div>
+                    <p class="card-description">Especialízate en proteger el mundo digital. Aprende ethical hacking, análisis de vulnerabilidades, gestión de riesgos y las últimas técnicas de seguridad informática.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">Ethical Hacking</span>
+                        <span class="feature-tag">Pentesting</span>
+                        <span class="feature-tag">Forense Digital</span>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-value">20</span>
+                            <span class="stat-unit">semanas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">98%</span>
+                            <span class="stat-unit">empleabilidad</span>
+                        </div>
+                    </div>
+                    <button class="card-btn" onclick="showBootcampDetail('cybersecurity')">Ver Detalles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios Section -->
+        <section id="testimonios" class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">💬 Historias de Éxito</h2>
+                <div class="section-line"></div>
+                <p class="section-description">Conoce las experiencias de nuestros graduados que ya están transformando el mundo tech</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">👩‍💻</div>
+                        <div class="testimonial-info">
+                            <h4>María González</h4>
+                            <p>Desarrolladora Full Stack en Rappi</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Talento Tech cambió mi vida completamente. En 16 semanas pasé de no saber programar a conseguir trabajo en una de las startups más importantes de Colombia. Los mentores son increíbles y el contenido está súper actualizado."</p>
+                    <div class="testimonial-footer">
+                        <span class="bootcamp-badge">💻 Full Stack</span>
+                        <span class="salary-info">💰 $4.5M COP/mes</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">👨‍💼</div>
+                        <div class="testimonial-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <p>Data Scientist en Bancolombia</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"El bootcamp de Ciencia de Datos superó todas mis expectativas. Aprendí desde Python básico hasta machine learning avanzado. Ahora trabajo en el sector financiero aplicando IA para detectar fraudes."</p>
+                    <div class="testimonial-footer">
+                        <span class="bootcamp-badge">📊 Data Science</span>
+                        <span class="salary-info">💰 $6.2M COP/mes</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">👩‍🔬</div>
+                        <div class="testimonial-info">
+                            <h4>Ana Martínez</h4>
+                            <p>Cybersecurity Analyst en Ecopetrol</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"La ciberseguridad era mi pasión pero no sabía por dónde empezar. Este programa me dio las bases sólidas y la experiencia práctica que necesitaba. Ahora protejo la infraestructura crítica del país."</p>
+                    <div class="testimonial-footer">
+                        <span class="bootcamp-badge">🔒 Cybersecurity</span>
+                        <span class="salary-info">💰 $5.8M COP/mes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-stats">
+                <div class="success-stat">
+                    <span class="success-number">1,200+</span>
+                    <span class="success-label">Graduados Exitosos</span>
+                </div>
+                <div class="success-stat">
+                    <span class="success-number">89%</span>
+                    <span class="success-label">Empleados en 6 meses</span>
+                </div>
+                <div class="success-stat">
+                    <span class="success-number">$4.8M</span>
+                    <span class="success-label">Salario promedio</span>
+                </div>
+                <div class="success-stat">
+                    <span class="success-number">150+</span>
+                    <span class="success-label">Empresas aliadas</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="section-container dark-section">
+            <div class="section-header">
+                <h2 class="section-title">🌐 Conecta con Nosotros</h2>
+                <div class="section-line"></div>
+                <p class="section-description">Tu futuro tecnológico está a un clic de distancia</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">🌍</span>
+                        <div>
+                            <h4>Página Oficial</h4>
+                            <a href="https://talentotech.gov.co" target="_blank" class="contact-link">talentotech.gov.co</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/573001234567" target="_blank" class="contact-link">+57 300 123 4567</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:info@talentotechoriente.gov.co" class="contact-link">info@talentotechoriente.gov.co</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h4>Síguenos en redes</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">💼</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modales para Bootcamps -->
+    <div id="bootcampModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Contenido dinámico del bootcamp -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" onclick="openRegistrationForm()">✨ ¡Inscribirme!</button>
+                <button class="btn-secondary" onclick="closeModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Inscripción -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content registration-modal">
+            <div class="modal-header">
+                <h2>🚀 Formulario de Inscripción</h2>
+                <span class="close" onclick="closeRegistrationModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-section">
+                        <h3>📋 Información Personal</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Nombres *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Apellidos *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="document">Documento de Identidad *</label>
+                                <input type="text" id="document" name="document" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Edad *</label>
+                                <input type="number" id="age" name="age" min="16" max="65" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>🎓 Información Académica</h3>
+                        <div class="form-group">
+                            <label for="education">Nivel Educativo *</label>
+                            <select id="education" name="education" required>
+                                <option value="">Selecciona tu nivel educativo</option>
+                                <option value="bachillerato">Bachillerato</option>
+                                <option value="tecnico">Técnico</option>
+                                <option value="tecnologo">Tecnólogo</option>
+                                <option value="universitario">Universitario</option>
+                                <option value="posgrado">Posgrado</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience">Experiencia en Tecnología</label>
+                            <select id="experience" name="experience">
+                                <option value="ninguna">Ninguna experiencia</option>
+                                <option value="basica">Conocimientos básicos</option>
+                                <option value="intermedia">Experiencia intermedia</option>
+                                <option value="avanzada">Experiencia avanzada</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>💻 Selección de Bootcamp</h3>
+                        <div class="bootcamp-selection">
+                            <div class="bootcamp-option">
+                                <input type="radio" id="fullstack-option" name="bootcamp" value="fullstack">
+                                <label for="fullstack-option" class="bootcamp-label">
+                                    <span class="bootcamp-icon">💻</span>
+                                    <div>
+                                        <h4>Desarrollo Web Full Stack</h4>
+                                        <p>16 semanas • Lun-Vie 6PM-10PM</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="bootcamp-option">
+                                <input type="radio" id="datascience-option" name="bootcamp" value="datascience">
+                                <label for="datascience-option" class="bootcamp-label">
+                                    <span class="bootcamp-icon">📊</span>
+                                    <div>
+                                        <h4>Ciencia de Datos</h4>
+                                        <p>18 semanas • Lun-Vie 6PM-10PM</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="bootcamp-option">
+                                <input type="radio" id="cybersecurity-option" name="bootcamp" value="cybersecurity">
+                                <label for="cybersecurity-option" class="bootcamp-label">
+                                    <span class="bootcamp-icon">🔒</span>
+                                    <div>
+                                        <h4>Ciberseguridad</h4>
+                                        <p>20 semanas • Lun-Vie 6PM-10PM</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>💬 Motivación</h3>
+                        <div class="form-group">
+                            <label for="motivation">¿Por qué quieres unirte a Talento Tech? *</label>
+                            <textarea id="motivation" name="motivation" rows="4" placeholder="Cuéntanos qué te motiva a estudiar tecnología y cómo planeas usar estos conocimientos..." required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">Acepto los <a href="#" target="_blank">términos y condiciones</a> y autorizo el tratamiento de mis datos personales *</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Quiero recibir información sobre nuevos programas y oportunidades laborales</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" form="registrationForm" class="btn-primary">🚀 Enviar Inscripción</button>
+                <button class="btn-secondary" onclick="closeRegistrationModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content confirmation-modal">
+            <div class="modal-header">
+                <h2>🎉 ¡Inscripción Exitosa!</h2>
+            </div>
+            <div class="modal-body">
+                <div class="success-animation">
+                    <div class="checkmark">✓</div>
+                </div>
+                <h3>¡Bienvenido a Talento Tech Oriente!</h3>
+                <p>Tu inscripción ha sido procesada exitosamente. Recibirás un correo de confirmación con los siguientes pasos.</p>
+                <div class="next-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p>Revisa tu correo electrónico</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p>Completa la evaluación inicial</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p>Asiste a la sesión informativa</p>
+                    </div>
+                </div>
+                <div class="contact-info-modal">
+                    <p><strong>📞 Contacto:</strong> +57 300 123 4567</p>
+                    <p><strong>📧 Email:</strong> info@talentotechoriente.gov.co</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" onclick="closeConfirmationModal()">¡Perfecto!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Talento Tech Oriente</h4>
+                <p>Transformando el futuro digital de Colombia, una línea de código a la vez.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Programa</h4>
+                <ul>
+                    <li><a href="#programa">Sobre nosotros</a></li>
+                    <li><a href="#bootcamps">Bootcamps</a></li>
+                    <li><a href="#destacado">Currículo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="tel:+573001234567">+57 300 123 4567</a></li>
+                    <li><a href="mailto:info@talentotechoriente.gov.co">Email</a></li>
+                    <li><a href="https://talentotech.gov.co">Sitio oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Talento Tech Oriente. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Chatbase Script -->
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="KsDMuQ2XrazU6OGntMBbC";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+
+    <!-- Vapi Voice Chatbot Widget -->
+    <vapi-widget
+        public-key="17bd6c9a-09b7-4845-a972-6c486b5ead5d"
+        assistant-id="521668d9-63ae-43b5-9ad6-5120dad504c5"
+        mode="voice"
+        theme="dark"
+        base-bg-color="#000000"
+        accent-color="#14B8A6"
+        cta-button-color="#000000"
+        cta-button-text-color="#ffffff"
+        border-radius="large"
+        size="full"
+        position="bottom-right"
+        title="Talento tech"
+        start-button-text="Start"
+        end-button-text="End Call"
+        chat-first-message="Hey, How can I help you today?"
+        chat-placeholder="Type your message..."
+        voice-show-transcript="true"
+        consent-required="true"
+        consent-title="Terms and conditions"
+        consent-content="By clicking "Agree," and each time I interact with this AI agent, I consent to the recording, storage, and sharing of my communications with third-party service providers, and as otherwise described in our Terms of Service."
+        consent-storage-key="vapi_widget_consent">
+    </vapi-widget>
+    <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+</body>
+</html>
